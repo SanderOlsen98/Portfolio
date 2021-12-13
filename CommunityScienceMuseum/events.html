@@ -1,0 +1,87 @@
+<html>
+<head>
+    <title>Community Science Museum</title>
+    <meta name="description" content="our events"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="UTF-8"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/9f8fc3ed9d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section class="header">
+        
+        <nav>
+            <a href="index.html"><img src="images/icon-1719742.png"></a>
+            <div class="nav-links" id="navLinks">  
+                <i class="fa fa-close" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="explore.html">EXPLORE</a></li>
+                    <li><a href="exhibition.html">EXHIBITION</a></li>
+                    <li><a href="events.html">EVENTS</a></li>
+                    <li><a href="visit.html">VISIT</a></li>
+                    <li><a href="getinvolved.html">GET INVOLVED</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        
+        <div class="text-box">
+            <h1>Events!</h1>
+            <P>Scroll down to view our upcoming events!</P>
+        </div>
+    </section>
+    <section class="community">
+        <h1>Special Events</h1>
+        <h3><a href="#.html">Professor of Aeronautics</a></h3>
+        <p>It is our pleasure to announce that Prof Sheila Widnall from the Massachusetts Institute of 
+            Technology will be delivering 3 lectures on the development of aeronautics and where 
+            the future lies in this exciting 'space'. </p>
+        <h3><a href="#.html">Night in the Museum</a></h3>
+        <p>Get your family together for an exciting night in the museum as you sleep over beside 
+            dinosaurs and science displays. Bring your own sleeping bag and get ready to rough it 
+            as we go exploring the wonders of science.</p>
+        <h3><a href="#.html">Energetica Exhibition on Loan</a></h3>
+        <p>On loan from the NEMO Science Museum in Amsterdam, the Energetica exhibition is coming 
+            to the Community Science Museum. It’s a series of installations that allow visitors to 
+            experience the power of the elements as we harness them. From solar energy powering 
+            lighting, to 'Wind Island' that shows how turbines are able to use and control wind to 
+            create power.</p>
+            <div class="row">
+                <div class="community-col">
+                    <img src="/images/roberto-nickson-396152.jpg">
+                </div>
+                <div class="community-col">
+                    <img src="/images/library-1132573_1920.jpg">
+                </div>
+                <div class="community-col">
+                    <img src="images/toa-heftiba-412579.jpg">
+                </div>
+                
+            </div>  
+    <section class="footer">
+        <p>&copy;Community Science Museum</p></a>
+    </section>  
+    <!----JavaScript for toggle menu---->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+        navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+        navLinks.style.right = "-200px";
+        }
+    </script>   
+</body>
+</html>
+
+
+
+
+
+
+

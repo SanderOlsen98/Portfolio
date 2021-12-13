@@ -1,0 +1,120 @@
+<html>
+<head>
+    <title>Community Science Museum</title>
+    <meta name="description" content="our location, and opening hours"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="UTF-8"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/9f8fc3ed9d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section class="header">
+        
+        <nav>
+            <a href="index.html"><img src="images/icon-1719742.png"></a>
+            <div class="nav-links" id="navLinks">  
+                <i class="fa fa-close" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="explore.html">EXPLORE</a></li>
+                    <li><a href="exhibition.html">EXHIBITION</a></li>
+                    <li><a href="events.html">EVENTS</a></li>
+                    <li><a href="visit.html">VISIT</a></li>
+                    <li><a href="getinvolved.html">GET INVOLVED</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        
+        <div class="text-box">
+            <h1>Visit Us!</h1>
+            <P>View our opening hours and location</P>
+        </div>
+    </section>
+    <section class="community">
+        <h1>Loaction</h1>
+        <h3>We are located in the center of Sarpsborg</h3>
+        <div id="map"></div>
+    </section>
+    <section class="science">
+        <h1>Admission</h1>
+        <p>The entrance is free for all. 
+
+            There are guided tours of the museum that leave every hour. These tours are 70 NOK per person 
+            and include a handy printed guide of the museum.
+            
+            If you would like to organize a guided tour for your group of 6 or more people, please contact us to
+            arrange the tour. </p>
+    </section>    
+    <section class="science">
+        <h1 class="opening">Opening Hours</h1>
+        <h3>Monday: Closed</h3>
+        <h3>Tuesday: 10:00-16:00</h3>
+        <h3>Wednesday: 10:00-16:00</h3>
+        <h3>Thursday: 10:00-16:00</h3>
+        <h3>Friday: 10:00-19:00</h3>
+        <h3>Saturday: 9:00-16:00</h3>
+        <h3>Sunday: 9:00-13:00</h3>
+    </section>
+    <section class="science">
+        <h3 class="access">Accessibility</h3>
+        <p class="margin">The museum has wheelchair accessibility ramps. It also has audio guides and braille display signs 
+            for the visually impaired.</p>
+    </section>
+    <section class="science">
+        <h3 class="access">Food and Drink</h3>
+        <p class="margin">There is a café attached to the museum where you can get light lunches, soft drinks, coffee, 
+            snacks and more.</p>
+    </section> 
+    <section class="science">
+        <h3 class="access">Shop</h3>
+        <p class="margin">Our shop offers a range of memorabilia from the museum as well as great gifts and activity 
+            packs that allow you to continue to explore science even after you've left the museum.</p>
+    </section>  
+    <section class="footer">
+        <p>&copy;Community Science Museum</p></a>
+    </section>  
+    <!----JavaScript for toggle menu---->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+        navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+        navLinks.style.right = "-200px";
+        }
+    </script> 
+    <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAHJ2qWTYw2eN9j982-TIvLzBDhzEev6a4&callback=initMap&libraries=&v=weekly"
+    async>
+  </script>
+  <script>
+      // Initialize and add the map
+      function initMap() {
+        // The location of Uluru
+        const uluru = { lat: 59.284073, lng: 11.109403 };
+        // The map, centered at Uluru
+        const map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 8,
+          center: uluru,
+        });
+        // The marker, positioned at Uluru
+        const marker = new google.maps.Marker({
+          position: uluru,
+          map: map,
+        });
+      }
+    </script>  
+</body>
+</html>
+
+
+
+
+
+
+
