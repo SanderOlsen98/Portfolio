@@ -98,7 +98,7 @@ nav ul li a {
 .projects {
   display: grid;
   grid-template-columns: 1fr;
-  max-width: 1500px;
+  max-width: 500px;
   margin: 40px auto;
   grid-gap: 20px;
 }
