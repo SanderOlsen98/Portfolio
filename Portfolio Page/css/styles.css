@@ -141,7 +141,6 @@ nav ul li a {
 
 form {
   padding: 2em;
-  background: rgb(216, 216, 216);
   border-radius: 1rem;
   margin-left: auto;
   width: 500px;
@@ -155,7 +154,7 @@ input {
 }
 
 button {
-  background: rgb(11, 91, 133);
+  background: rgb(226, 67, 46);
   border: none;
   width: 200px;
   padding: 1rem;
