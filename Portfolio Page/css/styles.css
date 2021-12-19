@@ -136,3 +136,43 @@ nav ul li a {
   text-align: left;
   font-weight: 200;
 }
+
+/* Contact From */
+
+form {
+  padding: 2em;
+  background: rgb(216, 216, 216);
+  border-radius: 1rem;
+  margin-left: auto;
+  width: 500px;
+}
+
+input {
+  width: 100%;
+  margin-top: 2px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+button {
+  background: rgb(11, 91, 133);
+  border: none;
+  width: 200px;
+  padding: 1rem;
+  color: white;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 0.2rem;
+}
+
+label {
+  display: block;
+  margin-top: 1rem;
+}
+
+.form-error {
+  display: none;
+  color: red;
+  font-size: 0.9rem;
+  margin-top: 2px;
+}
